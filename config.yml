@@ -1,0 +1,16 @@
+title: Noobie Lessons
+description: Short beginner's class. Learning how to use this GitHub stuff.
+template:
+  repo: noobie-lessons-template
+  name: noobie-lessons
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
